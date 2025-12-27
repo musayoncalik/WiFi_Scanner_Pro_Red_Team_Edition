@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Sanal Ortamlar (BOYUTU ŞİŞİRENLER BUNLAR)
+venv/
+myenv/
+__pycache__/
+*.pyc
+
+# Veri ve Loglar
+captures/
+reports/
+data/logs/
+
+# İşletim Sistemi Dosyaları
+.DS_Store
+Thumbs.db
+
+# Kullanıcıya özel ayar dosyası (İçinde şifre vs varsa yükleme)
+# config.ini
+
+
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+data/logs/*.log
+
+# Database
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Reports (generated)
+reports/output/*.html
+reports/output/*.pdf
+reports/output/*.csv
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+data/captures/*
+!data/captures/.gitkeep
+
