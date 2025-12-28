@@ -1,17 +1,78 @@
-# 🔍 WiFi Scanner Pro - Pasif WiFi Analiz ve Güvenlik Değerlendirme Aracı
+# 📡 WiFi Scanner Pro: Red Team Edition
 
-**Bitirme Projesi**  
-**Öğrenci:** Musa Yoncalık  
-**Proje Türü:** Güvenlik ve Ağ Analizi  
-**Dil:** Python 3.11+  # 🔍 WiFi Scanner Pro - Pasif WiFi Analiz ve Güvenlik Değerlendirme Aracı
 
-**Bitirme Projesi**  
-**Öğrenci:** Musa Yoncalık  
-**Proje Türü:** Güvenlik ve Ağ Analizi  
-**Dil:** Python 3.11+  
-**Platform:** Kali Linux  
-**Versiyon:** 2.0  
-**Durum:** ✅ Tamamlandı - Production Ready
+![Python](https://img.shields.io/badge/Python-3.11%2B-blue?style=for-the-badge&logo=python&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Kali%20Linux-black?style=for-the-badge&logo=linux&logoColor=white)
+![Type](https://img.shields.io/badge/Type-Red%20%26%20Blue%20Team-red?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Production%20Ready-success?style=for-the-badge)
+
+> **"Pasif Analizden Aktif Müdahaleye"**
+> 
+> Kapsamlı Ağ Analizi, Tehdit İstihbaratı ve Ofansif Güvenlik Aracı.
+
+
+## 🎯 Proje Özeti
+
+**WiFi Scanner Pro**, Kali Linux üzerinde çalışan, **pasif ağ analizi ile aktif güvenlik testlerini birleştiren**, ultra modern ve profesyonel bir masaüstü uygulamasıdır. Proje, çevredeki Wi-Fi ağlarını gerçek zamanlı olarak izlemek, tehdit istihbaratı toplamak ve yetkili güvenlik testleri (Red Team) gerçekleştirmek amacıyla geliştirilmiştir.
+
+## 🎓 Proje Amacı
+
+Bu proje, hem siber güvenlik uzmanlarının hem de ağ yöneticilerinin kablosuz ağ güvenliğini **uçtan uca** test edebilmesini hedefler. Araç, sadece pasif izleme ile kalmayıp, gerektiğinde **aktif zafiyet taraması** yaparak ağın dayanıklılığını ölçer.
+
+**Uygulama Yetenekleri:**
+
+* 📡 **Hibrit Analiz:** Kablosuz ağları ister **sessiz modda (pasif)** dinler, ister **aktif test modunda** analiz eder.
+* 🔍 **Detaylı Keşif:** Ağ adı (SSID), Gizli Ağlar, MAC adresi (BSSID), Sinyal Gücü (RSSI) ve **Detaylı Güvenlik Protokollerini** (WPA2/WPA3/WPS) tespit eder.
+* ⚔️ **Güvenlik Testleri:** Handshake yakalama ve Deauthentication gibi ofansif tekniklerle ağ parolalarının gücünü test etmeye olanak tanır.
+* 📊 **Modern Görselleştirme:** Elde edilen verileri canlı grafikler, ısı haritaları (heatmap) ve detaylı raporlar halinde sunar.
+* 🛡️ **Etik Odak:** Savunma (Blue Team) analizleri ile Saldırı (Red Team) simülasyonlarını **etik ve yasal sınırlar** çerçevesinde birleştirir.
+---
+
+## 📸 Proje Arayüzü
+<div align="center">
+
+### 1. Ana Tehdit Analiz Paneli (Dashboard)
+
+<<img width="936" height="881" alt="DASHBOARD" src="https://github.com/user-attachments/assets/4da5b054-3677-4d04-9d36-3fdc61bab7dc" />
+>
+
+
+---
+
+## 🌟 Hibrit Yetenekler (Hybrid Capabilities)
+
+Bu proje, siber güvenlikte **Red Team** (Saldırı) ve **Blue Team** (Savunma) metodolojilerini tek bir çatı altında birleştirir.
+
+### ⚔️ Red Team (Ofansif Özellikler)
+---
+* **🤝 WPA Handshake Yakalama:** Hedef ağın şifresini kırmak (crack) için gerekli olan 4-way handshake (EAPOL) paketlerini otomatik yakalar ve `.cap` formatında kaydeder.
+* **⚡ Deauthentication Saldırısı:** Hedef istemcileri (client) ağdan düşürerek handshake yakalama sürecini hızlandırır.
+  * *Kanal Kilitleme:* Saldırı sırasında tarayıcıyı hedef ağın kanalına sabitler.
+  * *Modlar:* Unicast dahil 4 farklı saldırı modu.
+* **🤖 Auto-Pwn Modu:** Tek tuşla hedef belirleme, saldırı başlatma ve veri toplama sürecini tam otonom hale getirir.
+* **🕵️ İstemci Profilleme:** Ağa bağlı cihazların üreticilerini (Apple, Samsung, Espressif vb.) analiz eder.
+
+### 🛡️ Blue Team (Defansif Özellikler)
+---
+* **🔍 Pasif Dinleme Modu:** Ağ trafiğini (Beacon, Probe, Data Frames) tamamen sessizce ve iz bırakmadan analiz eder.
+* **🛡️ Gelişmiş IDS (Saldırı Tespit Sistemi):**
+  * *Anomali Tespiti:* Deauth Flood ve Probe Storm saldırılarını yakalar.
+  * *Rogue AP (Evil Twin):* Kurumsal ağları taklit eden sahte erişim noktalarını ifşa eder.
+* **📊 Risk Skorlaması:** Her ağ için şifreleme türü, sinyal kalitesi ve anormalliklere göre **0-100** arası dinamik bir risk puanı hesaplar.
+* **📈 Görselleştirme:** Canlı RSSI sinyal grafikleri, Kanal Heatmap'i ve Sinyal/Gürültü (SNR) analizleri sunar.
+
+## 🛠️ Teknik Mimari
+
+Proje, modüler ve genişletilebilir bir yapıda **Python** tabanlı geliştirilmiştir.
+
+| Modül | Teknoloji / Kütüphane | Açıklama |
+| :--- | :--- | :--- |
+| **Paket Motoru** | `Scapy` | Asenkron paket yakalama, enjeksiyon ve protokol analizi. |
+| **Arayüz (GUI)** | `Tkinter` & `Matplotlib` | Glassmorphism etkili, canlı grafiklere sahip modern arayüz. |
+| **Veri Analizi** | `Pandas` & `NumPy` | Trafik verilerinin işlenmesi ve anomali tespiti. |
+| **Veritabanı** | `SQLite3` | Ağ ve olay kayıtlarının thread-safe olarak saklanması. |
+| **Raporlama** | `ReportLab` | PDF ve HTML formatında profesyonel raporlama. |
+
 
 ---
 
@@ -33,9 +94,6 @@
 
 ---
 
-## 🎯 Proje Özeti
-
-**WiFi Scanner Pro**, Kali Linux üzerinde çalışan, tamamen **pasif analiz prensibine dayalı**, ultra modern ve profesyonel bir masaüstü uygulamasıdır. Proje, çevredeki Wi-Fi ağlarını gerçek zamanlı olarak analiz etmek, detaylı güvenlik değerlendirmesi yapmak ve kullanıcıda ağ güvenliği konusunda farkındalık oluşturmak amacıyla geliştirilmiştir.
 
 ### ✨ Temel Özellikler
 
@@ -52,18 +110,6 @@
 
 ---
 
-## 🎓 Proje Amacı
-
-Bu proje, özellikle teknik bilgisi sınırlı kullanıcıların dahi Wi-Fi ortamlarını anlayabilmesini ve olası riskleri fark edebilmesini hedefler. 
-Kısaca ; Wifi ağına bağlanmadan, pasif olarak ortamı dinleyerek kablosuz ağların ve cihazların güvenlik durumunu analiz eden bir araçtır. 
-
-Uygulama:
-
-- Kablosuz ağlardan yayılan paketleri **pasif olarak** dinleyerek analiz eder
-- Ağ adı (SSID), MAC adresi (BSSID), sinyal gücü (RSSI), kanal bilgisi ve **detaylı güvenlik protokollerini** tespit eder
-- Bu verileri güvenlik, performans ve IDS modülleri ile analiz eder
-- Elde edilen sonuçları **modern grafikler** ve detaylı raporlar halinde kullanıcıya sunar
-- **Saldırı veya ağa müdahale içermeyen** yapısıyla etik ve yasal sınırlar içinde kalır
 
 ---
 
@@ -110,6 +156,25 @@ Uygulama:
 - **Kanal Overlap Matrisi**: Kanal girişim analizi
 - **DFS Desteği**: 5GHz radar bantları tespiti
 - **En İyi Kanal Önerisi**: Otomatik kanal optimizasyonu
+
+### 1. 🤝 WPA Handshake Yakalama (4-Way Handshake)
+Sistem, şifreli ağlara giriş sırasında gerçekleşen veri paketlerini anlık olarak izler.
+* **Otomatik Tespit:** Havada uçuşan `EAPOL` paketlerini yakaladığı an kullanıcıya görsel bildirim gönderir.
+* **Kalıcı Kayıt:** Yakalanan el sıkışma paketlerini `captures/handshakes/` dizinine `.cap` formatında kaydeder.
+* **Entegrasyon:** Kaydedilen dosyalar doğrudan **Wireshark** veya **Hashcat** ile kırılarak parola analizi yapılabilir.
+
+### 2. ⚡ Deauthentication (Ağdan Düşürme) Saldırısı
+Hedef cihazın veya tüm ağın bağlantısını kesmek için paket enjeksiyonu yapar.
+* **Kanal Kilitleme:** Saldırı sırasında tarayıcı otomatik olarak hedef ağın kanalına sabitlenir (Channel Hopping durdurulur).
+* **Esnek Modlar:** İster tek bir cihazı (**Unicast**), ister tüm ağı (**Broadcast**) modemden koparabilir.
+* **Senaryo:** Genellikle Handshake yakalamak için cihazların yeniden bağlanmasını zorlamak amacıyla kullanılır.
+
+### 3. 🤖 Otonom Mod (AUTO-PWN)
+Projenin **"Yapay Zeka"** mantığıyla çalışan otonom motorudur. Tek bir butonla sistem tamamen bağımsız çalışmaya başlar:
+* **Akıllı Hedef Seçimi:** Veritabanındaki ağları analiz ederek sinyali en güçlü ve aktif istemcisi (client) olan hedefleri belirler.
+* **Sıralı Operasyon:** Belirlenen hedeflere sırayla Deauth saldırısı yapar ve handshake yakalamak için dinlemeye geçer.
+* **Kara Liste Mantığı:** Başarılı olunan hedefleri işaretler ve gereksiz paket trafiğini önler.
+
 
 ### 🛡️ Güvenlik Özellikleri
 
@@ -226,8 +291,9 @@ Uygulama:
 ### Adım 1: Repository'yi Klonlayın
 
 ```bash
-git clone <repository-url>
-cd wifi_scanner_project
+git clone [https://github.com/musayoncalik/WiFi_Scanner_Pro_Red_Team_Edition.git](https://github.com/musayoncalik/WiFi_Scanner_Pro_Red_Team_Edition.git)
+
+cd WiFi_Scanner_Pro_Red_Team_Edition
 ```
 
 ### Adım 2: Python Sanal Ortamı Oluşturun
@@ -338,6 +404,9 @@ wifi_scanner_project/
 ├── main.py               # Ana giriş noktası
 ├── README.md             # Bu dosya
 └── PROJE_RAPORU.md       # Proje raporu
+
+> Bazı klasörler ve dosyaları güncellenmiştir
+
 ```
 
 ---
@@ -474,7 +543,54 @@ python3 tests/selftest.py
 
 ---
 
-## 📸 Ekran Görüntüleri
+---
+
+## 📸 Proje Ekran Görüntüleri
+
+<div align="center">
+
+### 1. Ana Tehdit Analiz Paneli (Dashboard)
+Çevredeki tüm ağların gerçek zamanlı listelendiği, **Risk Skorlarının** (Yüksek/Düşük) hesaplandığı ve gelişmiş filtreleme seçeneklerinin sunulduğu ana ekran.
+
+<img width="800" alt="Ana Ekran" src="<<img width="936" height="881" alt="DASHBOARD" src="https://github.com/user-attachments/assets/084481fe-ac49-449a-a712-d3dd3340d0a9" />
+>
+<br><br>
+
+### 2. Aktif Saldırı ve Müdahale Menüsü (Red Team)
+Hedef ağ üzerinde sağ tıklayarak açılan menü. **Deauth Saldırısı** başlatma ve **Handshake Yakalama** işlemlerinin tetiklendiği, detaylı analiz penceresinin açıldığı kontrol noktası.
+
+<img width="800" alt="Saldırı Menüsü" src="<img width="1280" height="769" alt="Right_Clint" src="https://github.com/user-attachments/assets/6b710fb3-839f-441a-acbc-1ce1e531de40" />
+">
+<br><br>
+
+### 3. Canlı Sinyal ve Trafik Analizi
+Ağların sinyal kalitesini (RSSI), kanal yoğunluğunu ve paket trafiğini anlık olarak görselleştiren grafik arayüzü.
+
+<img width="800" alt="Canlı Grafikler" src="<img width="1280" height="800" alt="Canli_Grafik_Menüsü" src="https://github.com/user-attachments/assets/4ff8f4a8-cbc3-4c81-95b4-86860d07aa1b" />
+">
+<br><br>
+
+### 4. Handshake Veritabanı ve Yönetimi
+Yakalanan 4-way handshake (`.cap`) dosyalarının listelendiği, boyut ve tarih bilgilerinin tutulduğu yönetim paneli. Bu dosyalar kırma işlemi (cracking) için dışa aktarılabilir.
+
+<img width="800" alt="Handshake Manager" src="<img width="1163" height="886" alt="Raporlar" src="https://github.com/user-attachments/assets/01cf4014-6850-4ebe-a329-1d123bd863bd" />
+">
+<br><br>
+
+### 5. Detaylı Sinyal ve Güvenlik İncelemesi
+Seçilen hedefin frekans, gürültü oranı (Noise), SNR değeri ve fiziksel katman (PHY) özelliklerinin detaylı incelendiği analiz penceresi.
+
+<img width="800" alt="Detay Analiz" src="<img width="1280" height="775" alt="Detayli_Paneli" src="https://github.com/user-attachments/assets/03f63c53-5041-4b98-a235-909ed0bafe87" />
+">
+<br><br>
+
+### 6. Raporlama Modülü
+Analiz sonuçlarının ve tespit edilen zafiyetlerin profesyonel formatlarda (PDF, HTML, CSV) dışa aktarılmasını sağlayan arayüz.
+
+<img width="800" alt="Raporlama" src="<img width="1163" height="886" alt="Raporlar" src="https://github.com/user-attachments/assets/7bc06443-94d7-4c61-85da-d7178498b919" />
+">
+
+</div>
 
 ### Ana Ekran
 - Modern header ile stats gösterimi
@@ -524,7 +640,7 @@ python3 tests/selftest.py
 
 Bu araç **sadece eğitim ve güvenlik araştırması** amaçlıdır. Kullanımından **kullanıcı sorumludur**. Yetkisiz ağ analizi ve müdahale yasalara aykırıdır ve cezai yaptırımlara tabidir.
 
-**ÖNEMLİ**: Bu proje tamamen **pasif analiz** prensibine dayanır. Hiçbir paket gönderilmez veya ağa müdahale edilmez.
+**ÖNEMLİ**: Bu proje, pasif analiz modunun yanı sıra **aktif güvenlik testleri** (paket enjeksiyonu) yeteneğine de sahiptir. Aktif modlar sadece yetkili olduğunuz ağlarda kullanılmalıdır.
 
 ---
 
@@ -605,11 +721,4 @@ Bu proje eğitim amaçlıdır. Kullanımından kullanıcı sorumludur.
 
 ---
 
-
-
----
-
-**Son Güncelleme:** 2025 
-**Versiyon:** 2.0  
-**Durum:** ✅ Production Ready - Ultra Modern Tasarım
 
